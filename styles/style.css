@@ -1,0 +1,581 @@
+/* import Quicksand & Grandstander fonts from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
+
+/* ------- color palette ------- */
+:root {
+  --blue: #6F9ABF;
+  --pink: #D9BEB4;
+  --beige: #F2DBCE;
+  --text-white: #fefefe;
+  --text-grey: #33333;
+}
+
+/* ------- reset Browser default style and general settings ------- */
+*,
+*:active {
+  box-sizing: border-box !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--text-white);
+}
+
+/* ------- text settings ------- */
+.pmz-title-1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.875rem;
+  color: var(--pink);
+}
+
+.pmz-title-2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.563rem;
+  color: var(--blue);
+}
+
+.pmz-title-3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--text-grey);
+}
+
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: var(--text-grey);
+}
+
+.sub-par.pmz-paragraph {
+  font-size: 0.875rem;
+}
+
+.title-about-me.pmz-title-1 {
+  text-align: right;
+  padding-bottom: 1rem;
+}
+
+.pmz-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-grey);
+}
+
+.text-footer {
+  font-size: 0.75rem;
+  padding-top: 0.625rem;
+}
+
+.description-me.pmz-paragraph {
+  padding-left: 4.375rem;
+}
+
+.title-card-gallery {
+  font-size: 1.3rem;
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.title-card-gallery:hover {
+  font-size: 1.3rem;
+  color: var(--pink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-padding-lf {
+  padding-left: 4.375rem;
+}
+
+.text-padding-rg {
+  padding-right: 4.375rem;
+}
+
+.text-caption {
+  padding-top: 0.5rem;
+  font-size: 0.7rem;
+}
+
+
+/* ------- image settings ------- */
+.img-me.img-fluid {
+  max-width: 100%;
+}
+
+.pmz-img-rounded {
+  border-radius: 0.25rem;
+}
+
+.pmz-img {
+  border-radius: 0.25rem;
+  margin: 0 1.5em;
+}
+
+.pmz-img img {
+  object-fit: cover;
+}
+
+/* ------- section settings ------- */
+.pmz-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* ------- nav&header settings ------- */
+header {
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+  background-color: var(--beige) !important;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.nav-item {
+  display: inline;
+  padding: 0.625rem 1.875rem;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--blue) !important;
+  margin-top: 40px;
+}
+
+.nav-link:hover {
+  color: var(--text-white) !important;
+}
+
+.navbar-toggler.ms-auto.d-lg-none {
+  border: 0px;
+}
+
+.navbar-brand.d-lg-none {
+  padding-left: 0.625rem;
+}
+
+/* ------- fontawsome icon settings ------- */
+.d-flex.justify-content-start.container-fluid {
+  padding-left: 4.375rem;
+}
+
+.d-flex.justify-content-start.container-fluid i {
+  padding-right: 0.625rem;
+  font-size: 1.875rem;
+  color: var(--blue);
+  text-shadow: 1px 1px rgba(0, 0, 0, .25);
+}
+
+.d-flex.justify-content-start.container-fluid i:hover {
+  color: var(--pink);
+}
+
+/* ------- button settings ------- */
+.div-button {
+  padding-top: 1rem;
+}
+
+.cv-button {
+  border-radius: 0.25rem;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-weight: 700;
+  background-color: var(--pink);
+  color: var(--text-white);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.cv-button:hover {
+  background-color: var(--text-white);
+  color: var(--pink);
+  border: 2px solid var(--pink);
+  text-decoration: none;
+}
+
+.cv-button:focus {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/* ------- hr settings------ */
+#hr-right {
+  width: 60%;
+  margin-left: auto;
+  height: 3px !important;
+  background-color: var(--blue);
+  border-radius: 7px 0px 0px 7px;
+}
+
+#hr-left {
+  width: 60%;
+  margin-right: auto;
+  height: 3px !important;
+  background-color: var(--blue);
+  border-radius: 0px 7px 7px 0px;
+}
+
+/* ------- about me section settings------ */
+.about-me.pmz-section {
+  padding-top: 1rem;
+}
+
+/* ------- timeline settings------ */
+.timeline-we.card {
+  border: none;
+  margin-left: 14rem;
+}
+
+.timeline {
+  border-left: 3px solid var(--pink);
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  margin: 0 auto;
+  letter-spacing: 0.2px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 50px 0px 50px 50px;
+  list-style: none;
+  text-align: left;
+  max-width: 50%;
+}
+
+@media (max-width: 767px) {
+  .timeline {
+    max-width: 98%;
+    padding: 25px;
+  }
+}
+
+.timeline h1 {
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.timeline .event {
+  border-bottom: 0px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .timeline .event {
+    padding-top: 30px;
+  }
+}
+
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .event:before {
+  left: -15.625rem;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+
+@media (max-width: 767px) {
+  .timeline .event:before {
+    left: 0px;
+    text-align: left;
+  }
+}
+
+.timeline .event:after {
+  -webkit-box-shadow: 0 0 0 3px #727cf5;
+  box-shadow: 0 0 0 3px var(--pink);
+  left: -55.8px;
+  background: #fff;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  content: "";
+  top: 5px;
+}
+
+@media (max-width: 767px) {
+  .timeline .event:after {
+    left: -31.8px;
+  }
+}
+
+.rtl .timeline {
+  border-left: 0;
+  text-align: right;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-right: 3px solid #727cf5;
+}
+
+.rtl .timeline .event::before {
+  left: 0;
+  right: -170px;
+}
+
+.rtl .timeline .event::after {
+  left: 0;
+  right: -55.8px;
+}
+
+/* ------- gallery setting------- */
+.container-fluid.gallery-works {
+  padding-top: 2.5rem;
+}
+
+.banner {
+  background: #a770ef;
+  background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+}
+
+/* ------- footer settings------- */
+.bg-light.text-center.text-lg-start {
+  background-color: var(--beige)!important;
+}
+
+/* ------- FOODIARY PAGE SETTING------- */
+#title-fooDiary {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #19425B;
+  font-size: 1.875rem;
+}
+
+#sub-1-fooDiary {
+  color: #19425B;
+}
+
+.section-fooDiary {
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.fa-solid.fa-bullseye-arrow {
+  font-size: 100px;
+  color: #19425B;
+}
+
+.div-text-fooDiary {
+  margin-top: 1.5rem;
+}
+
+/* ------- ARTECH PAGE SETTING------- */
+
+#title-arTech{
+ color: #7F7F7F;
+ font-family: "Montserrat", sans-serif;
+ font-weight: 700;
+ font-size: 1.875rem;
+}
+
+#sub-1-arTech {
+  color: #7F7F7F;
+}
+
+#div-arch-img{
+  padding: 1.5rem;
+}
+
+/* ------- TAHMAHAL PAGE SETTING------- */
+
+#title-tajMahal{
+ color: #295773;
+ font-family: "Montserrat", sans-serif;
+ font-weight: 700;
+ font-size: 1.875rem;
+}
+
+#sub-1-tajMahal {
+  color: #295773;
+}
+
+.padding-ol-lf{
+  padding-left:6rem;
+}
+
+#logo-tb-position{
+  padding-left: 4.5rem;
+  margin: auto;
+}
+
+#site-tm-link{
+  color: #295773;
+}
+#site-tm-link:hover{
+  color: #F2DBCE;
+}
+
+/* ------- d4u PAGE SETTING------- */
+#title-d4u{
+ color: #7200CC;
+ font-family: "Montserrat", sans-serif;
+ font-weight: 700;
+ font-size: 1.875rem;
+}
+
+.sub-1-d4u{
+  color: #7200CC;
+}
+.text-padding-rg-lg{
+  padding-right: 4rem;
+}
+
+.top-padding-lg{
+  padding-top: 3rem;
+  padding-left:8rem;
+}
+
+/* ------- CDM PAGE SETTING------- */
+#title-cdm{
+ color: #97D4ED;
+ font-family: "Montserrat", sans-serif;
+ font-weight: 700;
+ font-size: 1.875rem;
+}
+
+.sub-1-cdm{
+  color: #B0D066;
+}
+
+/* ------- Mi-care PAGE SETTING------- */
+#title-mi-care{
+  color: #FCB722;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+
+.sub-1-mi-care{
+  color: #FCB722;
+}
+/* ------- media query to change style for devices larger than 760px ------- */
+@media screen and (max-width: 992px) {
+
+  /*---Hidden logo on mibile phone--- */
+  .nav-item.logo {
+    display: none;
+  }
+
+  .nav-item {
+    display: inline;
+    margin: 0rem;
+    padding: 0.5rem 0.625rem;
+  }
+
+  .nav-link {
+    font-size: 1.125rem;
+  }
+
+  #pmz-ul .nav-item .nav-link {
+    margin: 0 0.1rem;
+  }
+
+  .div-button {
+    padding-bottom: 2rem;
+  }
+
+  .description-me.pmz-paragraph {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .d-flex.justify-content-start.container-fluid {
+    padding-left: 1.75rem;
+  }
+
+  .div-img-me {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .we.pmz-title-2 {
+    padding-left: 1.75rem;
+  }
+
+  .timeline-we.card {
+    border: none;
+    margin-left: 1.75rem;
+  }
+
+  .text-padding-lf-tb {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .text-padding-lf-ol-tb {
+    padding-left: 4rem !important;
+    padding-right: 2rem;
+  }
+  .text-padding-rg-ol-tb {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .padding-bot-tb {
+    padding-bottom: 1rem;
+  }
+
+  .text-caption {
+    margin-bottom: 0rem;
+  }
+  #logo-tb-position{
+    padding-left: 3.5rem;
+  }
+
+  #empty-cl{
+    display: none;
+  }
+  .logo-lf-tb{
+    padding-top: 3rem;
+  }
+
+  #phone-mi-care{
+    padding-left: 3rem;
+  }
+
+}
