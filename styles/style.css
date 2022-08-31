@@ -242,6 +242,10 @@ header {
   padding-top: 1rem;
 }
 
+#contacts-homepage{
+  padding-bottom: 2rem;
+}
+
 /* ------- timeline settings------ */
 .timeline-we.card {
   border: none;
